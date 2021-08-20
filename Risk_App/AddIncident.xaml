@@ -1,0 +1,72 @@
+﻿<Window x:Class="Risk_App.AddIncident"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Risk_App"
+        mc:Ignorable="d"
+       Title="Окно редактирования данных об инциденте" ResizeMode="NoResize" Height="680" Width="550" Icon="icon1.ico" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="#F8EBDE">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="1.2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.8*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lbl_Date" Grid.Column="0" Grid.Row="0" Content="Дата инцидента" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,15,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_Description" Grid.Column="0" Grid.Row="1" Content="Описание инцидента" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_DirectLossTypes" Grid.Column="0" Grid.Row="2" Content="Прямые потери, руб." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_PotentialLossTypes" Grid.Column="0" Grid.Row="3" Content="Потенциальные потери, руб." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_SR" Grid.Column="0" Grid.Row="4" Content="Источник риска" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_OR" Grid.Column="0" Grid.Row="5" Content="Объект риска" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_LossType" Grid.Column="0" Grid.Row="6" Content="Типы потерь" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_Unit" Grid.Column="0" Grid.Row="7" Content="Подразделение" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_Mark" Grid.Column="0" Grid.Row="8" Content="Оценка тяжести инцидента" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_Measures" Grid.Column="0" Grid.Row="9" Content="Меры по минимизации" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <Label x:Name="lbl_Status" Grid.Column="0" Grid.Row="10" Content="Статус инцидента" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,5" FontSize="14" Foreground="#3A4161"/>
+        <DatePicker x:Name="dp_Date" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="0" VerticalAlignment="Top" Margin="5,15,10,5"/>
+        <ScrollViewer Grid.Row="1" Grid.Column="1"  Margin="5,5,10,5">
+            <TextBox x:Name="tb_Description" HorizontalAlignment="Stretch" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Height="Auto" Background="#F8EBDE"/>
+        </ScrollViewer>
+        <TextBox x:Name="tb_DirectLossTypes" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Margin="5,5,10,5"/>
+        <TextBox x:Name="tb_PotentialLossTypes" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="3" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Margin="5,5,10,5"/>
+        <ComboBox x:Name="cb_SR" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Top" Margin="5,5,10,5" DisplayMemberPath="RiskSourceName" ItemsSource="{Binding}" SelectedValuePath="RiskSourceId" />
+        <ComboBox x:Name="cb_OR" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Top" Margin="5,5,10,5" DisplayMemberPath="RiskObjectName" ItemsSource="{Binding}" SelectedValuePath="RiskObjectId" />
+        <ComboBox x:Name="cb_LossType" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Top" Margin="5,5,10,5" DisplayMemberPath="LossTypeName" ItemsSource="{Binding}" SelectedValuePath="LossTypeId" />
+        <ComboBox x:Name="cb_Unit" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Top" Margin="5,5,10,5" DisplayMemberPath="UnitName" ItemsSource="{Binding}" SelectedValuePath="UnitId" />
+        <ComboBox x:Name="cb_Status" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Top" Margin="5,5,10,5" ItemsSource="{Binding}"/>
+        <ScrollViewer Grid.Row="9" Grid.Column="1"  Margin="5,5,10,5">
+            <TextBox x:Name="tb_Measures" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Background="#F8EBDE"/>
+        </ScrollViewer>
+        <Button x:Name="btn_OK" Content="Сохранить" Template="{StaticResource bt2Template}" HorizontalAlignment="Left" Margin="70,30,0,0" Grid.Row="11" VerticalAlignment="Top" Click="bOk_Click"/>
+        <Button x:Name="btn_Cancel" Content="Отмена" Grid.Column="1" Template="{StaticResource bt2Template}" HorizontalAlignment="Left" Margin="90,30,0,0" Grid.Row="11" VerticalAlignment="Top" Click="bCancel_Click"/>
+        
+        <Grid Grid.Row="8" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lb_Mark" Grid.Column="0" HorizontalAlignment="Stretch" Grid.Row="5"  Content="0" VerticalAlignment="Top" Margin="5,5,10,5" Height="30" FontSize="15" FontWeight="Bold"/>
+            <Button x:Name="button" Content="Рассчитать" Template="{StaticResource bt2Template}" Grid.Column="1" HorizontalAlignment="Left" Margin="20,5,0,0" Grid.Row="5" VerticalAlignment="Top" Click="bAssessment_Click"/>
+         </Grid>
+    </Grid>
+</Window>

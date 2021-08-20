@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ViewModel.Services.IncidentService" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAEAABAAAAAEAAAAAAAAAAIAgAAAAAAAAA=</HashCode>
+      <FileName>Services\IncidentService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.LossTypeService" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAEAABAAAAAAgAAAAAIAAAAAgAAAAIBAAA=</HashCode>
+      <FileName>Services\LossTypeService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.FrequencyAssessmentService" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAABAACAgAAAAAACAAAAAAgAAAAQAgAA=</HashCode>
+      <FileName>Services\FrequencyAssessmentService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.LossAssessmentservice" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAIAEAABAAAAAAAAIAAAAAAgAAgAAAAAAAAA=</HashCode>
+      <FileName>Services\LossAssessmentService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.QuantityAssessmentService" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAARAABAAAAAAAAAAAAAAIkAAAAAAAAA=</HashCode>
+      <FileName>Services\QuantityAssessmentService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.DurationAssessmentService" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAEAABAAAAAQAAAAAAAABgAAkAAAAAAAAA=</HashCode>
+      <FileName>Services\DurationAssessmentService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.RiskObjectService" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAABAAAAAAACAAAAABAAAAwIAAAEAAAA=</HashCode>
+      <FileName>Services\RiskObjectService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.RiskSourceService" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAACEAABAAAAAAAAAAAAAAAAAAgEACAAAAAE=</HashCode>
+      <FileName>Services\RiskSourceService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ViewModel.Services.UnitService" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAABCAAAAAAAABAAAAABAIgAAAgAAAAA=</HashCode>
+      <FileName>Services\UnitService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

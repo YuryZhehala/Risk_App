@@ -1,0 +1,36 @@
+﻿<Window x:Class="Risk_App.Marks.Edit_MF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Risk_App.Marks"
+        mc:Ignorable="d"
+        Title="Окно редактирования частоты реализации" Height="250" Width="700" ResizeMode="NoResize" Icon="../icon1.ico" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="#F8EBDE">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lbl_Name_MF" Grid.Column="0" Grid.Row="0" Content="Наименование" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" FontSize="16"/>
+        <TextBox x:Name="tb_Name_MF" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Margin="10,0,10,0" FontSize="16"/>
+        <Label x:Name="lbl_Value_MF" Grid.Column="0" Grid.Row="1" Content="Значение" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" FontSize="16"/>
+        <Label x:Name="lbl_Value_MF9" Grid.Column="0" Grid.Row="2" Content="(Максимальная точность - 2 знака после запятой)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" FontSize="10"/>
+        <TextBox x:Name="tb_Value_MF" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Margin="10,0,10,0" FontSize="16" TextChanged="tb_Value_MF_TextChanged"/>
+        <Button x:Name="btn_OK" Content="Принять изменения" Template="{StaticResource bt2Template}" HorizontalAlignment="Left" Margin="40,0,0,0" Grid.Row="3" VerticalAlignment="Top" Click="bOk_Click" FontSize="16"/>
+        <Button x:Name="btn_Cancel" Content="Отмена" Grid.Column="1" Template="{StaticResource bt2Template}" HorizontalAlignment="Left" Margin="150,0,0,0" Grid.Row="3" VerticalAlignment="Top" Click="bCancel_Click" FontSize="16"/>
+    </Grid>
+
+</Window>

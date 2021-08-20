@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Data.Entities.Incident">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Members>
+      <Property Name="DurationAssessment" Hidden="true" />
+      <Property Name="DurationAssessmentId" Hidden="true" />
+      <Property Name="FrequencyAssessment" Hidden="true" />
+      <Property Name="FrequencyAssessmentld" Hidden="true" />
+      <Property Name="LossAssessment" Hidden="true" />
+      <Property Name="LossAssessmentId" Hidden="true" />
+      <Property Name="LossType" Hidden="true" />
+      <Property Name="LossTypeld" Hidden="true" />
+      <Property Name="QuantityAssessment" Hidden="true" />
+      <Property Name="QuantityAssessmentId" Hidden="true" />
+      <Property Name="RiskObject" Hidden="true" />
+      <Property Name="RiskObjectId" Hidden="true" />
+      <Property Name="RiskObjectName" Hidden="true" />
+      <Property Name="RiskSource" Hidden="true" />
+      <Property Name="RiskSourceId" Hidden="true" />
+      <Property Name="Unit" Hidden="true" />
+      <Property Name="Unitld" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAyAAAAEQAAlAAIAoCAwAgUAABRAIAMACCAEIAABICA=</HashCode>
+      <FileName>Entities\Incident.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.LossType">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LossType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.FrequencyAssessment">
+    <Position X="7.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAEQgAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\FrequencyAssessment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.LossAssessment">
+    <Position X="10.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAACAAAAAAAAAAAgAAAAAAAACACA=</HashCode>
+      <FileName>Entities\LossAssessment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.QuantityAssessment">
+    <Position X="2.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAQAQAAAAAAgAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\QuantityAssessment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.DurationAssessment">
+    <Position X="5.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAQAAAAAAAAAIAAABAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Entities\DurationAssessment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.RiskObject">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAEAACAAAAAAAAA=</HashCode>
+      <FileName>Entities\RiskObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.RiskSource">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAEAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\RiskSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Entities.Unit">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAIAAAAAEAAAAAAA=</HashCode>
+      <FileName>Entities\Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="Risk_App.Chart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Risk_App"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance local:Chart}"
+        Title="Структура инцидентов в разрезе объектов риска" Height="600" Width="1200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="../icon1.ico">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="#F8EBDE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Template="{StaticResource bt2Template}" Grid.Row="0" x:Name="btn_Add"  Content="Сохранить" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Top" FontSize="15" Click="Add_Click"/>
+        <Grid Grid.Row="1" Name ="mygrid" Background="#F8EBDE">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Name="gr_label" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Height="Auto" TextWrapping="Wrap" TextAlignment="Center"/>
+        <lvc:PieChart   Series="{Binding SeriesCollection}" FontSize="15" LegendLocation="Bottom" DataClick="Chart_OnDataClick" Hoverable="False" DataTooltip="{x:Null}" Grid.Row="1" Name="rrr">
+
+        </lvc:PieChart>
+    </Grid>
+</Grid>
+</Window>
